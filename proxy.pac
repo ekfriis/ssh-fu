@@ -6,6 +6,12 @@ function FindProxyForURL(url, host)
       || host == "127.0.0.1")
     return "DIRECT";
 
+  else if (shExpMatch(host, "*.cms"))
+    return "SOCKS5 127.0.0.1:47370";
+
+  else if (shExpMatch(host, "*.netflix.com"))
+    return "SOCKS5 127.0.0.1:4445";
+
   else if (shExpMatch(host, "vocms144.cern.ch"))
     return "SOCKS5 127.0.0.1:47171";
 

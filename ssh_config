@@ -21,7 +21,7 @@ Host lxvoadm*.cern.ch lxplus*.cern.ch cmslpc*.fnal.gov
 #Host lxvoadm*.cern.ch
 #  DynamicForward 47170
 
-Host lxplus312.cern.ch
+Host lxplus311.cern.ch
   DynamicForward 47170
 
 Host cmslpc22.fnal.gov
@@ -46,7 +46,7 @@ Host *.cern.ch
   ForwardX11 yes
   ForwardX11Trusted yes
   #ProxyCommand proxy-ssh lxvoadm5.cern.ch /usr/bin/nc %h %p
-  ProxyCommand ~/.ssh/ssh-fu/proxy-ssh lxplus312.cern.ch /usr/bin/nc %h %p
+  ProxyCommand ~/.ssh/ssh-fu/proxy-ssh lxplus311.cern.ch /usr/bin/nc %h %p
 
 Host *.fnal.gov
   GSSAPITrustDNS no

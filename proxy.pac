@@ -15,6 +15,15 @@ function FindProxyForURL(url, host)
   else if (shExpMatch(host, "*.netflix.com"))
     return "SOCKS5 127.0.0.1:4445";
 
+  else if (shExpMatch(host, "*.nbc.com"))
+    return "SOCKS5 127.0.0.1:4445";
+
+  else if (shExpMatch(host, "*.hulu.com"))
+    return "SOCKS5 127.0.0.1:4445";
+
+  else if (shExpMatch(host, "*.tlc.com"))
+    return "SOCKS5 127.0.0.1:4445";
+
   else if (shExpMatch(host, "vocms144.cern.ch"))
     return "SOCKS5 127.0.0.1:47171";
 

@@ -73,6 +73,19 @@ Host pcrctvme01
   ForwardX11Trusted yes
   ProxyCommand ~/.ssh/ssh-fu/proxy-ssh cmsusr.cern.ch /usr/bin/nc %h %p
 
+Host trglab
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  User efriis
+  Hostname ayinger.hep.wisc.edu
+  ProxyCommand ~/.ssh/ssh-fu/proxy-ssh login05.hep.wisc.edu /usr/bin/nc %h %p
+
+Host scientraffic
+  User ubuntu
+  Hostname www.scientraffic.com
+  Compression yes
+  IdentityFile ~/.ssh/scientraffic_gis_stack.pem
+
 Host *
   IdentitiesOnly yes
   ServerAliveInterval 5

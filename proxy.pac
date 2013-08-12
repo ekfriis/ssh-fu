@@ -9,6 +9,9 @@ function FindProxyForURL(url, host)
   else if (shExpMatch(host, "*.cms"))
     return "SOCKS5 127.0.0.1:47370";
 
+  else if (shExpMatch(host, "*.cms904"))
+    return "SOCKS5 127.0.0.1:47371";
+
   else if (shExpMatch(host, "dqm-prod-local"))
     return "SOCKS5 127.0.0.1:47370";
 
